@@ -1,0 +1,16 @@
+{
+  "name": "lovely-file-system",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "lovely-file-system.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lovely",
+    "file",
+    "system"
+  ],
+  "author": "Berke Kurnaz",
+  "license": "ISC"
+}
