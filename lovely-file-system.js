@@ -34,6 +34,20 @@ class LovelyFileSystem {
         }
     }
 
+    async readFile(fileName) {
+        const filePath = path.join(this.basePath, fileName);
+
+        try {
+            const content = await fs.readFile(filePath, 'utf-8');
+            return content;
+        } catch (error) {
+            if (error.code === 'ENOENT') {
+                return `File not found: ${filePath}`;
+            }
+            throw error;
+        }
+    }
+
     async deleteFile(fileName) {
         const filePath = path.join(this.basePath, fileName);
 
